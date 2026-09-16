@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Meta Info -->
+  <title>Ayunda Nila Novitasari | Personal Portfolio</title>
+  <meta name="description" content="Personal Portfolio Ayunda Nila Novitasari - Pelajar SMK Negeri Tembarak jurusan Rekayasa Perangkat Lunak (RPL) yang berfokus pada teknologi dan seni tari.">
+  <meta name="keywords" content="Ayunda Nila Novitasari, Portfolio Ayunda, SMK Negeri Tembarak, RPL, Rekayasa Perangkat Lunak, Siswa RPL, Portofolio Pelajar">
+  <meta name="author" content="Ayunda Nila Novitasari">
+
+  <!-- Open Graph / Meta Sosial -->
+  <meta property="og:title" content="Ayunda Nila Novitasari | Personal Portfolio">
+  <meta property="og:description" content="Website personal portfolio Ayunda Nila Novitasari, pelajar RPL di SMK Negeri Tembarak dengan ketertarikan pada teknologi dan seni.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Poppins & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#home" class="nav-brand" aria-label="Beranda Ayunda">
+        Ayunda<span class="brand-dot">.</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#tentang" class="nav-link">Tentang Saya</a></li>
+        <li><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
+        <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+        <li><a href="#pengalaman" class="nav-link">Pengalaman</a></li>
+        <li><a href="#minat" class="nav-link">Minat</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      
+      <!-- Text Content -->
+      <div class="hero-content reveal">
+        <p class="hero-greeting">
+          <span class="wave-icon">👋</span> Hallo, saya
+        </p>
+        <h1 class="hero-name">
+          Ayunda Nila <span class="text-gradient">Novitasari</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span>Pelajar SMK Negeri Tembarak</span>
+          <span class="divider-dot">•</span>
+          <span>Rekayasa Perangkat Lunak</span>
+          <span class="divider-dot">•</span>
+          <span>Pecinta Seni</span>
+        </p>
+        <p class="hero-description">
+          Saya adalah pelajar SMK Negeri Tembarak jurusan Rekayasa Perangkat Lunak yang memiliki ketertarikan pada teknologi dan seni. Saya senang belajar hal-hal baru, bekerja sama dalam tim, serta mengembangkan kemampuan diri melalui berbagai pengalaman.
+        </p>
+        <div class="hero-actions">
+          <a href="#tentang" class="btn btn-primary">
+            <span>Tentang Saya</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#minat" class="btn btn-secondary">
+            <i class="fa-regular fa-compass"></i>
+            <span>Lihat Portofolio</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual / Foto Profil Card -->
+      <div class="hero-visual reveal delay-1">
+        <div class="profile-card-wrapper">
+          <div class="profile-glow-ring"></div>
+          
+          <!-- Profile Frame Container 
+               CATATAN UNTUK AYUNDA:
+               Untuk mengganti foto dengan foto asli Anda:
+               1. Masukkan foto Anda ke folder assets/images/ (misalnya: profile.jpg)
+               2. Ubah src di bawah ini menjadi "assets/images/profile.jpg"
+          -->
+          <div class="profile-image-container">
+            <img 
+              src="assets/images/profile.jpg" 
+              alt="Foto Profil Ayunda Nila Novitasari" 
+              class="profile-image" 
+              id="profileImage"
+            >
+          </div>
+
+          <!-- Floating Badges: Perpaduan Teknologi & Seni -->
+          <div class="hero-floating-badge badge-tech">
+            <span class="badge-icon"><i class="fa-solid fa-code"></i></span>
+            <span>RPL • Kelas 11</span>
+          </div>
+
+          <div class="hero-floating-badge badge-art-tag">
+            <span class="badge-icon"><i class="fa-solid fa-masks-theater"></i></span>
+            <span>Seni Tari & Kreativitas</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SECTION: TENTANG SAYA ==================== -->
+  <section class="section" id="tentang">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-badge">
+          <i class="fa-regular fa-user"></i> Pengenalan Diri
+        </span>
+        <h2 class="section-title">Tentang <span class="text-gradient">Saya</span></h2>
+        <p class="section-desc">Mengenal lebih dekat latar belakang, pendidikan, dan keseharian saya.</p>
+      </div>
+
+      <div class="about-grid">
+        
+        <!-- Narrative Card -->
+        <div class="about-narrative-card reveal delay-1">
+          <p class="about-lead">
+            Saya biasa dipanggil <strong>Ayunda</strong>. Saya merupakan seorang pelajar di SMK Negeri Tembarak, jurusan <strong>Rekayasa Perangkat Lunak (RPL)</strong>, kelas 11.
+          </p>
+          <p class="about-subtext">
+            Saat ini saya sedang menjalani pendidikan untuk mengembangkan pengetahuan dan keterampilan di bidang teknologi, khususnya dalam dunia perangkat lunak. Selain belajar di bidang teknologi, saya juga memiliki minat dalam bidang seni, terutama menari.
+          </p>
+        </div>
+
+        <!-- Personal Info Cards -->
+        <div class="personal-info-grid reveal delay-2">
+          
+          <!-- Card: Nama Lengkap -->
+          <div class="info-item-card">
+            <div class="info-icon-wrapper">
+              <i class="fa-regular fa-id-card"></i>
+            </div>
+            <div>
+              <p class="info-label">Nama Lengkap</p>
+              <h3 class="info-value">Ayunda Nila Novitasari</h3>
+            </div>
+          </div>
+
+          <!-- Card: Panggilan -->
+          <div class="info-item-card">
+            <div class="info-icon-wrapper">
+              <i class="fa-regular fa-face-smile"></i>
+            </div>
+            <div>
+              <p class="info-label">Nama Panggilan</p>
+              <h3 class="info-value">Ayunda</h3>
+            </div>
+          </div>
+
+          <!-- Card: Jenis Kelamin -->
+          <div class="info-item-card">
+            <div class="info-icon-wrapper">
+              <i class="fa-solid fa-venus"></i>
+            </div>
+            <div>
+              <p class="info-label">Jenis Kelamin</p>
+              <h3 class="info-value">Perempuan</h3>
+            </div>
+          </div>
+
+          <!-- Card: Tanggal Lahir -->
+          <div class="info-item-card">
+            <div class="info-icon-wrapper">
+              <i class="fa-regular fa-calendar"></i>
+            </div>
+            <div>
+              <p class="info-label">Tanggal Lahir</p>
+              <h3 class="info-value">20 Januari 2009</h3>
+            </div>
+          </div>
+
+          <!-- Card: Status -->
+          <div class="info-item-card">
+            <div class="info-icon-wrapper">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+              <p class="info-label">Status</p>
+              <h3 class="info-value">Pelajar</h3>
+            </div>
+          </div>
+
+          <!-- Card: Alamat -->
+          <div class="info-item-card">
+            <div class="info-icon-wrapper">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="info-label">Alamat / Asal</p>
+              <h3 class="info-value">Gandon, Gandu, Tembarak, Temanggung</h3>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SECTION: PENDIDIKAN ==================== -->
+  <section class="section" id="pendidikan">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-badge">
+          <i class="fa-solid fa-school"></i> Riwayat Studi
+        </span>
+        <h2 class="section-title">Jejak <span class="text-gradient">Pendidikan</span></h2>
+        <p class="section-desc">Pendidikan formal yang sedang saya jalani saat ini untuk mempersiapkan masa depan.</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-track">
+          
+          <div class="timeline-node reveal delay-1">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-institution">SMK Negeri Tembarak</h3>
+                <span class="timeline-badge">
+                  <i class="fa-regular fa-clock"></i> 2025 – Sekarang
+                </span>
+              </div>
+              
+              <div class="timeline-meta">
+                <span class="meta-tag">
+                  <i class="fa-solid fa-code-branch"></i> Rekayasa Perangkat Lunak (RPL)
+                </span>
+                <span class="meta-tag">
+                  <i class="fa-solid fa-user-graduate"></i> Kelas 11
+                </span>
+              </div>
+
+              <p class="timeline-body">
+                Saat ini saya sedang menempuh pendidikan di SMK Negeri Tembarak pada jurusan Rekayasa Perangkat Lunak. Dalam pendidikan ini saya belajar mengenal dunia teknologi dan pengembangan perangkat lunak, sekaligus melatih kemampuan berpikir logis, kreativitas, ketelitian, dan kerja sama dalam menyelesaikan berbagai tugas dan proyek.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SECTION: KEAHLIAN ==================== -->
+  <section class="section" id="keahlian">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-badge">
+          <i class="fa-solid fa-users"></i> Kompetensi Utama
+        </span>
+        <h2 class="section-title">Keahlian <span class="text-gradient">Utama</span></h2>
+        <p class="section-desc">Kekuatan interpersonal yang menjadi pondasi saya dalam berkarya dan berkolaborasi.</p>
+      </div>
+
+      <div class="skills-showcase reveal delay-1">
+        <div class="skill-card-featured">
+          <div class="skill-header">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div>
+              <span class="skill-category">Keahlian Interpersonal</span>
+              <h3 class="skill-title">Kerja Sama Tim</h3>
+            </div>
+          </div>
+
+          <p class="skill-desc">
+            Saya mampu bekerja sama dengan anggota tim, berkomunikasi dengan baik, menghargai pendapat orang lain, dan berusaha berkontribusi untuk mencapai tujuan bersama.
+          </p>
+
+          <div class="skill-pillars">
+            <div class="pillar-item">
+              <span class="pillar-icon"><i class="fa-solid fa-comments"></i></span>
+              <span class="pillar-text">Komunikasi Baik</span>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-icon"><i class="fa-solid fa-handshake-angle"></i></span>
+              <span class="pillar-text">Menghargai Pendapat</span>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-icon"><i class="fa-solid fa-bullseye"></i></span>
+              <span class="pillar-text">Kontribusi Tujuan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SECTION: KARAKTER & KEPRIBADIAN ==================== -->
+  <section class="section">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-badge">
+          <i class="fa-regular fa-star"></i> Nilai Diri
+        </span>
+        <h2 class="section-title">Karakter & <span class="text-gradient">Kepribadian</span></h2>
+        <p class="section-desc">Prinsip pribadi yang senantiasa saya pegang teguh dalam belajar maupun beraktivitas sehari-hari.</p>
+      </div>
+
+      <div class="character-grid">
+        
+        <!-- Karakter 1: Mandiri -->
+        <div class="character-card card-mandiri reveal delay-1">
+          <div class="character-icon-box">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <h3 class="character-title">Mandiri</h3>
+          <p class="character-desc">
+            Saya terbiasa berusaha menyelesaikan tugas dan menghadapi tantangan dengan kemampuan sendiri serta tidak mudah bergantung pada orang lain.
+          </p>
+        </div>
+
+        <!-- Karakter 2: Disiplin -->
+        <div class="character-card card-disiplin reveal delay-2">
+          <div class="character-icon-box">
+            <i class="fa-solid fa-stopwatch-20"></i>
+          </div>
+          <h3 class="character-title">Disiplin</h3>
+          <p class="character-desc">
+            Saya berusaha menjalankan tugas dan kewajiban dengan tertib serta menghargai waktu.
+          </p>
+        </div>
+
+        <!-- Karakter 3: Bertanggung Jawab -->
+        <div class="character-card card-tanggungjawab reveal delay-3">
+          <div class="character-icon-box">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <h3 class="character-title">Bertanggung Jawab</h3>
+          <p class="character-desc">
+            Saya berusaha menyelesaikan tugas yang diberikan dengan sungguh-sungguh dan bertanggung jawab terhadap setiap pekerjaan yang saya lakukan.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SECTION: PENGALAMAN ==================== -->
+  <section class="section" id="pengalaman">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-badge">
+          <i class="fa-solid fa-trophy"></i> Rekam Jejak
+        </span>
+        <h2 class="section-title">Pengalaman <span class="text-gradient">Organisasi & Lomba</span></h2>
+        <p class="section-desc">Pengalaman berharga yang telah membentuk mentalitas kepemimpinan dan kekompakan tim.</p>
+      </div>
+
+      <div class="experience-grid reveal delay-1">
+        <div class="experience-card">
+          <div class="experience-top">
+            <h3 class="experience-title">Lomba Pramuka</h3>
+            <span class="experience-year-badge">
+              <i class="fa-solid fa-calendar-check"></i> 2023
+            </span>
+          </div>
+
+          <p class="experience-subtitle">
+            <i class="fa-solid fa-award"></i> Tingkat / Cabang Daerah (Semasa SMP)
+          </p>
+
+          <p class="experience-desc">
+            Pada tahun 2023, saat masih bersekolah di SMP, saya mengikuti kegiatan lomba Pramuka tingkat/cabang daerah. Pengalaman tersebut membantu saya belajar tentang kerja sama, kedisiplinan, tanggung jawab, keberanian, dan kekompakan dalam sebuah tim.
+          </p>
+
+          <div class="experience-tags">
+            <span class="exp-tag"><i class="fa-solid fa-check"></i> Kerja Sama</span>
+            <span class="exp-tag"><i class="fa-solid fa-check"></i> Kedisiplinan</span>
+            <span class="exp-tag"><i class="fa-solid fa-check"></i> Tanggung Jawab</span>
+            <span class="exp-tag"><i class="fa-solid fa-check"></i> Keberanian</span>
+            <span class="exp-tag"><i class="fa-solid fa-check"></i> Kekompakan Tim</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SECTION: MINAT & SENI (CREATIVE FUSION) ==================== -->
+  <section class="section art-creative-section" id="minat">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-badge badge-art">
+          <i class="fa-solid fa-palette"></i> Kreativitas & Hobi
+        </span>
+        <h2 class="section-title">Minat & Bidang yang <span class="text-gradient">Ditekuni</span></h2>
+        <p class="section-desc">Menyelaraskan logika pemrograman perangkat lunak dengan keindahan ekspresi seni budaya.</p>
+      </div>
+
+      <div class="art-fusion-card reveal delay-1">
+        
+        <!-- Content Area -->
+        <div class="art-content-area">
+          <span class="art-badge">
+            <i class="fa-solid fa-sparkles"></i> Bidang yang Ditekuni: Seni
+          </span>
+          <h3 class="art-title">Seni Tari (Menari)</h3>
+          <p class="art-desc">
+            Menari merupakan salah satu kegiatan yang saya minati. Melalui seni tari, saya dapat mengekspresikan kreativitas, melatih kepercayaan diri, serta belajar tentang konsistensi dan ketekunan.
+          </p>
+
+          <div class="art-highlights">
+            <div class="art-highlight-item">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>Ekspresi Kreativitas</span>
+            </div>
+            <div class="art-highlight-item">
+              <i class="fa-solid fa-heart"></i>
+              <span>Melatih Percaya Diri</span>
+            </div>
+            <div class="art-highlight-item">
+              <i class="fa-solid fa-gem"></i>
+              <span>Konsistensi & Ketekunan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Dance & Art Illustration -->
+        <div class="art-visual-wrapper">
+          <img 
+            src="assets/images/art-dance-accent.svg" 
+            alt="Ilustrasi Seni Tari dan Gerak Harmonis" 
+            class="art-visual-art"
+          >
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SECTION: QUOTE ==================== -->
+  <section class="section">
+    <div class="container quote-container reveal">
+      <div class="quote-card">
+        <p class="quote-text">
+          "Terus belajar, berani berkembang, dan jangan takut untuk menunjukkan kreativitas."
+        </p>
+        <span class="quote-author">Ayunda Nila Novitasari</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION: KONTAK ==================== -->
+  <section class="section" id="kontak">
+    <div class="container contact-container">
+      
+      <div class="section-header reveal">
+        <span class="section-badge">
+          <i class="fa-regular fa-paper-plane"></i> Tetap Terhubung
+        </span>
+        <h2 class="section-title">Hubungi <span class="text-gradient">Saya</span></h2>
+        <p class="section-desc">Mari terhubung untuk kolaborasi tugas, diskusi teknologi, atau berbagi seputar seni.</p>
+      </div>
+
+      <!-- Notice Placeholder Asli sesuai ketentuan -->
+      <div class="contact-notice-box reveal delay-1">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>Informasi kontak akan segera ditambahkan.</span>
+      </div>
+
+      <!-- Contact Placeholders 
+           CATATAN UNTUK AYUNDA:
+           Anda dapat memperbarui tautan dan data di bawah ini saat akun sudah siap:
+      -->
+      <div class="contact-grid reveal delay-2">
+        
+        <!-- Email Placeholder -->
+        <a href="#kontak" class="contact-card-placeholder c-email" data-platform="Email" aria-label="Kontak Email">
+          <div class="contact-icon-wrapper">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <h3 class="contact-name">Email</h3>
+          <span class="contact-status">Akan segera tersedia</span>
+        </a>
+
+        <!-- Instagram Placeholder -->
+        <a href="#kontak" class="contact-card-placeholder c-ig" data-platform="Instagram" aria-label="Kontak Instagram">
+          <div class="contact-icon-wrapper">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <h3 class="contact-name">Instagram</h3>
+          <span class="contact-status">Akan segera tersedia</span>
+        </a>
+
+        <!-- WhatsApp Placeholder -->
+        <a href="#kontak" class="contact-card-placeholder c-wa" data-platform="WhatsApp" aria-label="Kontak WhatsApp">
+          <div class="contact-icon-wrapper">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3 class="contact-name">WhatsApp</h3>
+          <span class="contact-status">Akan segera tersedia</span>
+        </a>
+
+        <!-- GitHub Placeholder -->
+        <a href="#kontak" class="contact-card-placeholder c-github" data-platform="GitHub" aria-label="Kontak GitHub">
+          <div class="contact-icon-wrapper">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <h3 class="contact-name">GitHub</h3>
+          <span class="contact-status">Akan segera tersedia</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3 class="text-gradient">Ayunda Nila Novitasari</h3>
+          <p class="footer-tagline">Pelajar RPL | Pecinta Seni</p>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tentang">Tentang Saya</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#pengalaman">Pengalaman</a></li>
+          <li><a href="#minat">Minat</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 Ayunda Nila Novitasari. All Rights Reserved.
+        </p>
+        <p class="footer-copy">
+          SMK Negeri Tembarak &bull; Rekayasa Perangkat Lunak
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP BUTTON ==================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ==================== INTERACTIVE TOAST ==================== -->
+  <div class="contact-toast" id="contactToast" role="alert" aria-live="polite">
+    <i class="fa-solid fa-circle-info"></i>
+    <span class="toast-message">Informasi kontak akan segera ditambahkan.</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
