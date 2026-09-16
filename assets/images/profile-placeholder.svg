@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <!-- Soft Inner Glow -->
+    <radialGradient id="innerGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Skin Tone Gradient -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFDFC4"/>
+      <stop offset="100%" stop-color="#F0B58D"/>
+    </linearGradient>
+
+    <!-- Hijab / Scarf Gradient (Elegant Violet Lavender) -->
+    <linearGradient id="hijabGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B21B6"/>
+      <stop offset="50%" stop-color="#6D28D9"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </linearGradient>
+
+    <!-- Clothes Gradient -->
+    <linearGradient id="clothesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DDD6FE"/>
+      <stop offset="50%" stop-color="#F5F3FF"/>
+      <stop offset="100%" stop-color="#EDE9FE"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#4C1D95" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Base with Gradient -->
+  <circle cx="250" cy="250" r="230" fill="url(#bgGrad)"/>
+  <circle cx="250" cy="250" r="230" fill="url(#innerGlow)"/>
+
+  <!-- Subtle Tech Geometric Pattern in Background -->
+  <g stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1.5" fill="none">
+    <circle cx="250" cy="250" r="190" stroke-dasharray="6 6"/>
+    <circle cx="250" cy="250" r="140" stroke-dasharray="4 8"/>
+    <path d="M70 250 H 430"/>
+    <path d="M250 70 V 430"/>
+  </g>
+
+  <!-- Silhouette / Student Illustration -->
+  <g filter="url(#cardShadow)">
+    <!-- Shoulders & Coat -->
+    <path d="M120 460 C 130 380, 190 350, 250 350 C 310 350, 370 380, 380 460 Z" fill="url(#clothesGrad)"/>
+
+    <!-- Hijab / Hair drape silhouette (modest, youthful, stylish) -->
+    <path d="M165 240 C 150 340, 210 385, 250 385 C 290 385, 350 340, 335 240 C 335 150, 290 120, 250 120 C 210 120, 165 150, 165 240 Z" fill="url(#hijabGrad)"/>
+
+    <!-- Face Oval -->
+    <ellipse cx="250" cy="235" rx="55" ry="68" fill="url(#skinGrad)"/>
+
+    <!-- Hijab Frame around Face -->
+    <path d="M195 210 C 195 160, 220 145, 250 145 C 280 145, 305 160, 305 210 C 305 260, 280 295, 250 295 C 220 295, 195 260, 195 210 Z" fill="none" stroke="url(#hijabGrad)" stroke-width="18"/>
+
+    <!-- Eyes (Friendly & Gentle) -->
+    <ellipse cx="230" cy="225" rx="5" ry="6" fill="#2E1065"/>
+    <circle cx="228" cy="223" r="2" fill="#FFFFFF"/>
+    <ellipse cx="270" cy="225" rx="5" ry="6" fill="#2E1065"/>
+    <circle cx="268" cy="223" r="2" fill="#FFFFFF"/>
+
+    <!-- Eyebrows -->
+    <path d="M220 214 Q 230 210, 240 214" stroke="#4C1D95" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M260 214 Q 270 210, 280 214" stroke="#4C1D95" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Smile & Cheeks -->
+    <path d="M240 255 Q 250 264, 260 255" stroke="#E11D48" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="222" cy="242" r="7" fill="#F43F5E" opacity="0.3"/>
+    <circle cx="278" cy="242" r="7" fill="#F43F5E" opacity="0.3"/>
+  </g>
+
+  <!-- Sparkles & Art/Tech Embellishments -->
+  <g fill="#FEF08A">
+    <!-- Star 1 Top Right -->
+    <path d="M380 130 Q 380 145 395 145 Q 380 145 380 160 Q 380 145 365 145 Q 380 145 380 130 Z"/>
+    <!-- Star 2 Top Left -->
+    <path d="M120 160 Q 120 172 132 172 Q 120 172 120 184 Q 120 172 108 172 Q 120 172 120 160 Z"/>
+  </g>
+
+  <!-- Outer Ring Border -->
+  <circle cx="250" cy="250" r="236" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-opacity="0.85"/>
+</svg>
